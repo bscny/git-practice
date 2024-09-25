@@ -5,60 +5,51 @@ export default class Stack {
 
 	constructor() {
 		this.arr = [];
-		this.top_index = -1;
 	}
 
 	// push element into stack
 	push(element) {
-		this.top_index ++;
-		this.arr[this.top_index] = element;
+		this.arr.push(element);
 	}
 
 	// pop elements at the top and return the value
 	pop() {
-		if(this.top_index == -1){
-			console.log("stack is empty!!");
-		}else{
-			this.top_index --;
-			return this.arr[this.top_index + 1];
-		}
+		return this.arr.pop();
 	}
 
 	// only returning top element
 	peek() {
-		if(this.top_index == -1){
-			console.log("stack is empty!!");
-		}else{
-			return this.arr[this.top_index];
-		}
+		return this.arr.at(this.arr.length - 1);
 	}
 
 	// check if it's empty
 	isEmpty() {
-		if(this.top_index == -1){
+		if(this.arr.length == 0) {
 			return true;
-		}else{
+		} else {
 			return false;
 		}
 	}
 
 	// return the number of elements
-	size() {
-		return this.top_index + 1;
+	size() {	
+		return this.arr.length;
 	}
 
 	// clear all elements in stack
 	clear() {
-		this.top_index = -1;
+		this.arr.length = 0;
 	}
 
 	// print all elements in stack
 	print() {
-		if(this.top_index == -1){
-			console.log("stack is empty!!");
+		if(this.arr.length == 0) {
+			console.log();
+		} else {
+			for(let i = this.arr.length - 1; i >= 0; i --) {
+				console.log(this.arr[i]);
+			}
 		}
-		for(let i = this.top_index; i >= 0; i --){
-			console.log(this.arr[i]);
-		}
+
 	}
 }
