@@ -2,7 +2,7 @@
 
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-1.png)
 
-可以看到，在 `npm init` 後面接default(一直enter) 之後，產生了一個package.json 檔，透過 `npm install express` 後，多了個dependencies。
+可以看到，在 `npm init` 後面接default 參數(一直enter) 之後，產生了一個package.json 檔，透過 `npm install express` 後，多了個dependencies。
 
 1. package.json 中的 dependencies 是什麼?
     - 這裡列出了剛才透過 `npm install express` 所下載的套件，還有他的版本。
@@ -11,12 +11,16 @@
 2. package.json 中的 scripts 這個區塊怎麼用？
     - scripts 這個區塊裡放的是可以用npm直接執行的腳本語言，直接舉例子來看比較快:
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-2.png)
+    
     之後執行:
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-3.png)
+    
     可以看到，他確實跑出了scripts 區塊裡相對應的內容。
     - 由此可知，要應用的話可以像這樣:
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-4.png)
+
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-5.png)
+
     這裡值得注意的是，因為launch 不是default 的腳本，所以要帶一個 `run` 。
 
 3. Port number 要怎麼以環境變數來設定？
@@ -28,6 +32,7 @@
 
     before:
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-6.png)
+
     after:
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-7.png)
 
