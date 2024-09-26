@@ -13,6 +13,9 @@
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-2.png)
     
     之後執行:
+
+
+
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-3.png)
     
     可以看到，他確實跑出了scripts 區塊裡相對應的內容。
@@ -21,7 +24,7 @@
 
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-5.png)
 
-    這裡值得注意的是，因為launch 不是default 的腳本，所以要帶一個 `run` 。
+這裡值得注意的是，因為launch 不是default 的腳本，所以要帶一個 `run` 。
 
 3. Port number 要怎麼以環境變數來設定？
     - 若要用.env 檔來開port，必須做一些步驟和安裝一個插件:
