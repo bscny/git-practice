@@ -76,3 +76,38 @@
 
     - web browser的世界裡:
         - 其實大同小異，只不過是從package.json 裡更改，變成在html 裡更改而已。
+
+
+# Additional question
+
+
+1. localhost 是什麼？
+    - 簡單來說的話是一個IP address: 127.0.0.1 。每台電腦都一樣，用來連自己做測試。
+    - localhost 這個字眼本身概念很像環境變數(但不是)，他用來map 127.0.0.1 這個IP。
+
+2. curl 是什麼？查查看怎麼用 curl 來測試網路連線？常用參數有哪些？
+    - Client for URLs，顧名思義透過network protocols (HTTP, HTTPS, FTP...)，把原本在網路上跑的資訊，抓來終端command line (也可以推上去，是能雙向的)。
+    - 可以透過-I 來測試，舉例來說: `curl -I https://example.com` 會回傳https://example.com 這個server 的回傳碼(200)代表成功。
+    - 常用參數:
+        - -X
+            - GET
+                - 用於從服務器獲取資源或數據。
+            - POST
+                - 用於向服務器提交數據。
+            - DELETE
+                - 用於請求服務器刪除特定資源。
+            - e.g.  `curl -X GET http://example.com`
+        - -d
+            - 發送資料通常和POST 請求合用。
+            - e.g.  `curl -X POST -d "name=value" http://example.com/resource`
+        - -H
+            - 添加自定義標頭。
+            - e.g.  `curl -H "Authorization: Bearer token" http://example.com`
+        - -o
+            - 將響應內容輸出到指定文件中。
+            - e.g.  `curl -o filename.html http://example.com`
+        - -I
+            - 如上題
+        - -v
+            - 顯示詳細的請求和響應過程，包括連接過程的詳細資訊。
+            - e.g.  `curl -v http://example.com`
