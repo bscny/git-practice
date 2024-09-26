@@ -18,6 +18,8 @@
     
     可以看到，他確實跑出了scripts 區塊裡相對應的內容。
     - 由此可知，要應用的話可以像這樣:
+
+
     ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-4.png)
 
     ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-5.png)
