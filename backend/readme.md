@@ -14,17 +14,15 @@
     
     之後執行:
 
-
-
-![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-3.png)
+    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-3.png)
     
     可以看到，他確實跑出了scripts 區塊裡相對應的內容。
     - 由此可知，要應用的話可以像這樣:
-![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-4.png)
+    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-4.png)
 
-![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-5.png)
+    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-5.png)
 
-這裡值得注意的是，因為launch 不是default 的腳本，所以要帶一個 `run` 。
+    這裡值得注意的是，因為launch 不是default 的腳本，所以要帶一個 `run` 。
 
 3. Port number 要怎麼以環境變數來設定？
     - 若要用.env 檔來開port，必須做一些步驟和安裝一個插件:
@@ -34,10 +32,10 @@
     3. 修改app.js ，以下是before 和after 。
 
     before:
-![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-6.png)
+    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-6.png)
 
     after:
-![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-7.png)
+    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-7.png)
 
     4. 執行command。
 
