@@ -10,7 +10,7 @@
 
 2. package.json 中的 scripts 這個區塊怎麼用？
     - scripts 這個區塊裡放的是可以用npm直接執行的腳本語言，直接舉例子來看比較快:
-![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-2.png)
+    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-2.png)
     
     之後執行:
 
