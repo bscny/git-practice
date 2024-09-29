@@ -89,7 +89,7 @@
     - Client for URLs，顧名思義透過network protocols (HTTP, HTTPS, FTP...)，把原本在網路上跑的資訊，抓來終端command line (也可以推上去，是能雙向的)。
     - 可以透過-I 來測試，舉例來說: `curl -I https://example.com` 會回傳https://example.com 這個server 的回傳碼(200)代表成功。
 
-    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-7.png)
+    ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_03/HW3-8.png)
 
     - 常用參數:
         - -X
