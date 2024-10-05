@@ -23,7 +23,11 @@
 11. References:
 
 > https://www.youtube.com/watch?v=0Gz-PUnEUF0
+
 > https://www.youtube.com/watch?v=iInUBOVeBCc
+
 > https://nginx.org/en/linux_packages.html#Ubuntu
+
 > https://medium.com/learn-or-die/%E5%A5%BD-pm2-%E4%B8%8D%E7%94%A8%E5%97%8E-fc7434cc8821
+
 > https://www.youtube.com/watch?v=4bS7KS_s8Go
