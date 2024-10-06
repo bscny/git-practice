@@ -1,4 +1,4 @@
-# Proofs to my work
+# Proofs of my work
 
 At step 5. 可透過 instance 的 public IP 連線看看是否成功 （瀏覽器 or curl ）
 
