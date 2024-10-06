@@ -13,15 +13,19 @@
     Nginx 是一個強大的軟體 (open source) 讓 client 和 server 之間的互動可以更加穩定、安全、輕鬆、快速。
 
     - Web Server:
+
         Nginx 可以被當成一個純粹的 server，就像上禮拜的 express server 那樣，可用 `curl` 指令直接與其互動。
 
     - Reverse Proxy:
+
         此項等第5點一並說明。
 
     - Load Balancer:
+
         此項等第5點一並說明。
 
     - HTTP Cache:
+
         此項等第5點一並說明。
 
 4. pm2 套件是什麼？有什麼用處？
@@ -40,14 +44,17 @@
 
 5. 步驟 9 中提到的 `proxy` 是什麼意思？為什麼要透過 Nginx 來 `proxy` 到 Express 開發的 Web Server?
 
-    `proxy` 這個字的意思是代表，我覺得形容得非常好，因為一旦我們使用 proxy，client 端將看不到 Server 端，只能跟 proxy 作互動。那 proxy 到底能提供什麼優點讓我們不直接看到 Server 呢?
+    `proxy` 這個字的字面意思是代表，我覺得形容得非常好，因為一旦我們使用 proxy，client 端將看不到 Server 端，只能跟 proxy 作互動。那 proxy 到底能提供什麼優點讓我們不直接和 Server 互動呢?
 
     1. Load Balancer: 
-        我們想像一個 NetFlix 的 Server，假設今天有十萬個人同時想要觀看某部影集，缺少 proxy 的情況下 server 端要怎麼分配這些個人呢? 要怎麼樣才能確定每個 server 可以附載適當的量呢? 這個時候我們就可以使用proxy達成這件事情，我們讓所有request都先跟 proxy 互動，之後再讓 proxy 把相應的 request 分配到 Server。
+
+        我們想像一個 NetFlix 的 Server，假設今天有十萬個人同時想要觀看某部影集，缺少 proxy 的情況下 server 端要怎麼分配這些人呢? 要怎麼樣才能確定每個 server 可以附載適當的量呢? 這個時候我們就可以使用proxy達成這件事情，我們讓所有request都先跟 proxy 互動，之後再讓 proxy 把相應的 request 分配到 Server。(可用 round robin 等演算法)
     2. HTTP Cache:
+
         讓我們繼續沿用上個 Netflix 的例子，這十萬個用戶都想取得高品質 1080P 的影片的話，難道 proxy 要每一次都跟 server 獲取一段 1080P 的影片，之後再傳給 client 嗎? 這樣太沒效率了，有了 proxy，自從某個 client 拿到了 proxy 從 server 傳輸出來的影片之後，proxy 就先把那份影片存起來，這樣下個 client 要使用的時候就不用再回去 server 拿一次了。
     3. Network Security:
-        正如前面所說，client 的只會和 proxy 做互動，所以駭客能攻擊到的IP在哪裡呢? 無疑只剩 proxy。因此在做資安維護的時候只要維護 proxy 就可以了。
+
+        正如前面所說，client 只會和 proxy 做互動，所以駭客能攻擊到的IP在哪裡呢? 只剩 proxy。因此在做資安維護的時候只要維護 proxy 就可以了。
 
 6. 設定檔:
 
@@ -129,9 +136,10 @@
 
     - 我在研究 nginx.conf 時偶然發現的，沒帶 `sudo` 執行 Nginx 時也會提示 (error log)
 
-    - `cd /var/log/nginx`
-
-    `cat access.log`
+    - ```
+cd /var/log/nginx 
+cat access.log
+```
 
 10. 無
 
