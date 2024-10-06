@@ -31,3 +31,7 @@
 > https://medium.com/learn-or-die/%E5%A5%BD-pm2-%E4%B8%8D%E7%94%A8%E5%97%8E-fc7434cc8821
 
 > https://www.youtube.com/watch?v=4bS7KS_s8Go
+
+> https://www.youtube.com/watch?v=G6OYA_tbrNM&t=873s
+
+> https://blog.logrocket.com/how-to-run-node-js-server-nginx/
