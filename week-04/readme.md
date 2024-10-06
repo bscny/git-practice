@@ -5,9 +5,11 @@
 1. The IP address is : 54.250.70.171
 
 2. 什麼是 instance type?
+
     instance type 決定了要使用多少 CPU, memory, storage, and networking capacity。本次功課使用的是 micro 也就是最簡易的資源的 instance type (免費)。
 
 3. 什麼是 Nginx？有哪些用途與特性？
+
     Nginx 是一個強大的軟體 (open source) 讓 client 和 server 之間的互動可以更加穩定、安全、輕鬆、快速。
 
     - Web Server:
@@ -23,6 +25,7 @@
         此項等第5點一並說明。
 
 4. pm2 套件是什麼？有什麼用處？
+
     pm2 是一個 node 的程序管理器，可以幫我們輕鬆執行多個程序、自動重啟程序、彙整各程序資訊、提升處理 request 速度。其中常用指令有:
     
     - `pm2 start <app_name>`
@@ -36,6 +39,7 @@
     - `pm2 log`
 
 5. 步驟 9 中提到的 `proxy` 是什麼意思？為什麼要透過 Nginx 來 `proxy` 到 Express 開發的 Web Server?
+
     `proxy` 這個字的意思是代表，我覺得形容得非常好，因為一旦我們使用 proxy，client 端將看不到 Server 端，只能跟 proxy 作互動。那 proxy 到底能提供什麼優點讓我們不直接看到 Server 呢?
 
     1. Load Balancer: 
@@ -46,6 +50,7 @@
         正如前面所說，client 的只會和 proxy 做互動，所以駭客能攻擊到的IP在哪裡呢? 無疑只剩 proxy。因此在做資安維護的時候只要維護 proxy 就可以了。
 
 6. 設定檔:
+
     - nginx.conf:
         ```
         user  nginx;
@@ -102,6 +107,7 @@
         ```
 
 7. Security Group 是什麼？用途為何？有什麼設定原則嗎？
+
     - Security Group 是雲端運算環境中用來控制進出虛擬資源（如本次功課的 instance）的網路流量的虛擬防火牆。
 
     - Security Group 可以用來:
@@ -114,14 +120,17 @@
         - 資源按照其角色或功能分組
 
 8. 什麼是 sudo? 為什麼有的時候需要加上 sudo，有時候不用？
+
     sudo 就是以 root 的身分做操作的 command line，要加入 sudo 時，就代表使用者 user 要針對自己沒有權限的檔案做操作，若使用 `ls -l` 我們可以看到相對應的權限，比如說 /etc 下的檔案權限 (e.g. rw-r-----  前三碼屬於 root, 中間是 root 的 group, 最後是其他使用者 user)，這時若想以 user 的身分操作(在此情況讀、寫、執行都不行)，就要帶 `sudo` 。
 
 9. Nginx 的 Log 檔案在哪裡？你怎麼找到的？怎麼看 Nginx 的 Log？
+
     - /var/log/nginx
 
     - 我在研究 nginx.conf 時偶然發現的，沒帶 `sudo` 執行 Nginx 時也會提示 (error log)
 
     - `cd /var/log/nginx`
+
     `cat access.log`
 
 10. 無
