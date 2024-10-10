@@ -4,13 +4,15 @@ At step 5. 可透過 instance 的 public IP 連線看看是否成功 （瀏覽�
 
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_04/4-1.png)
 
+![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_04/4-4.png)
+
 At step 8. 透過 npm 安裝 pm2 套件，透過 pm2 啟動上週作業中的 Express server
 
 ![image](https://github.com/bscny/git-practice/blob/main/assets/images/week_04/4-2.png)
 
 At step 9 and 10. 設定 Nginx，讓他可以 proxy 到這個 Express Server，透過 instance 的 public IP 連線看看是否成功 (瀏覽器 or curl)
 
-![video](https://github.com/bscny/git-practice/blob/main/assets/videos/week_04/4-3.mp4)
+![video](https://github.com/bscny/git-practice/blob/main/assets/videos/week_04/4-3.mkv)
 
 # WEEK 4
 
