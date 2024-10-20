@@ -36,23 +36,16 @@ NS 代表「Name Server」，NS record 告訴網路怎麼找到網域的 IP 位�
 
 5. Domain Name vs FQDN vs URL 這三者分別為何？
     - Domain Name
+        + 任何一個通過申請買下的網域，就是一個 Domain Name，比如說: yourdomain.com
 
-    任何一個通過申請買下的網域，就是一個 Domain Name，比如說: yourdomain.com
-
-    - FQDN
-    
-    fully qualified domain name，是一個 Domain Name，但必須包含: (root domain 通常忽略)    
-        - top-level domain
-                
-        比如說 .com .org
-            
-        - second-level domain
-                
-        比如說: yourdomain.com 中的 yourdomain
-        
-        - Subdomain
-                
-        比如說: www
+    - FQDN 
+        + fully qualified domain name，是一個 Domain Name，但必須包含: (root domain 通常忽略)    
+            - top-level domain
+                * 比如說 .com .org
+            - second-level domain
+                * 比如說: yourdomain.com 中的 yourdomain
+            - Subdomain
+                * 比如說: www
         
     綜上述合起來看，www.yourdomain.com 就是一個 FQDN
     
