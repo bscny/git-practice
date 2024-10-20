@@ -1,6 +1,6 @@
 # Proofs of my work
 
-透過更改 CNAME record 將 ssl 憑證輸入進 nginx:
+透過更改 CNAME record 並將 ssl 憑證輸入進 nginx:
 
 Gdaddy CNAME record 設定:
 
@@ -41,8 +41,7 @@ NS 代表「Name Server」，NS record 告訴網路怎麼找到網域的 IP 位�
 
     - FQDN
     
-    fully qualified domain name，是一個 Domain Name，但必須包含: (root domain 通常忽略)
-        
+    fully qualified domain name，是一個 Domain Name，但必須包含: (root domain 通常忽略)    
         - top-level domain
                 
         比如說 .com .org
