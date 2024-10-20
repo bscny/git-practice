@@ -3,17 +3,17 @@
 透過更改 CNAME record 將 ssl 憑證輸入進 nginx:
 
 Gdaddy CNAME record 設定:
-[image4](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-4.png)
+![image4](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-4.png)
 
 憑證:
-[image3](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-3.png)
+![image3](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-3.png)
 
 
 NginX 設定檔:
-[image1](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-1.png)
+![image1](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-1.png)
 
 實測:
-[image2](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-2.png)
+![image2](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-2.png)
 
 
 # Week 05
@@ -30,20 +30,32 @@ NS 代表「Name Server」，NS record 告訴網路怎麼找到網域的 IP 位�
 
 5. Domain Name vs FQDN vs URL 這三者分別為何？
     - Domain Name
-        任何一個通過申請買下的網域，就是一個 Domain Name，比如說: yourdomain.com
+
+    任何一個通過申請買下的網域，就是一個 Domain Name，比如說: yourdomain.com
+
     - FQDN
-        fully qualified domain name，是一個 Domain Name，但必須包含: (root domain 通常忽略)
-            - top-level domain               
-               比如說 .com .org
-            - second-level domain
-                比如說: yourdomain.com 中的 yourdomain
-            - Subdomain
-                比如說: www
-        綜上述合起來看，www.yourdomain.com 就是一個 FQDN
+    
+    fully qualified domain name，是一個 Domain Name，但必須包含: (root domain 通常忽略)
+        - top-level domain
+                
+        比如說 .com .org
+            
+        - second-level domain
+                
+        比如說: yourdomain.com 中的 yourdomain
+        
+        - Subdomain
+                
+        比如說: www
+        
+    綜上述合起來看，www.yourdomain.com 就是一個 FQDN
+    
     - URL
-        只有 Domain Name 或 FQDN 是沒辦法實際尋訪一個網站的，因為我們並沒有規範其對應的 TCP protocol，一但搭上了 protocol，就形成了 URL。比如說: https://www.yourdomain.com
+
+    只有 Domain Name 或 FQDN 是沒辦法實際尋訪一個網站的，因為我們並沒有規範其對應的 TCP protocol，一但搭上了 protocol，就形成了 URL。比如說: https://www.yourdomain.com
 
 6. 為什麼應該要為網站加上憑證？而不是直接用 http 就好？
+
 http 走的是 port 80 (通常)，是不加密的，https 走的是 port 443 (通常)，是經過加密的，所以才需要憑證，現在主流是用 TLS 加密。
 
 ## 我的碎碎念
