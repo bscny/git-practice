@@ -3,16 +3,20 @@
 透過更改 CNAME record 將 ssl 憑證輸入進 nginx:
 
 Gdaddy CNAME record 設定:
+
 ![image4](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-4.png)
 
 憑證:
+
 ![image3](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-3.png)
 
 
 NginX 設定檔:
+
 ![image1](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-1.png)
 
 實測:
+
 ![image2](https://github.com/bscny/git-practice/blob/main/assets/images/week_05/5-2.png)
 
 
@@ -23,9 +27,11 @@ NginX 設定檔:
 2. [GoDaddy](https://tw.godaddy.com)
 
 3. DNS 的 A record 是什麼？
+
 簡單來說就是一個 domain name 指向的 IP address。「A」代表「位址」，是最基礎的 DNS 記錄類型。
 
 4. DNS 的 NS record 是什麼？
+
 NS 代表「Name Server」，NS record 告訴網路怎麼找到網域的 IP 位址。在 DNS Server 裡有一層 server 叫 Name Server，NS record 就存在這裡，一個 NS record 會儲存所有的 record，包括 A 記錄、MX 記錄或 CNAME 記錄。
 
 5. Domain Name vs FQDN vs URL 這三者分別為何？
@@ -36,6 +42,7 @@ NS 代表「Name Server」，NS record 告訴網路怎麼找到網域的 IP 位�
     - FQDN
     
     fully qualified domain name，是一個 Domain Name，但必須包含: (root domain 通常忽略)
+        
         - top-level domain
                 
         比如說 .com .org
