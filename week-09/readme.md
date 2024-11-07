@@ -38,7 +38,7 @@ follow the steps, you are fine!!
 2. `cd /etc/nginx/`
 3. `sudo vim nginx.conf`
     - ![image02](https://github.com/bscny/git-practice/blob/main/assets/images/week_09/2.png)
-    - now problem **might** comes, if you have `E212: Can't open file for writing` while saving files your vim, then you need to straightly go to step 15 first and come back after that
+    - now problem **might** comes, if you have `E212: Can't open file for writing` while saving files on your vim, then you need to straightly go to step 15 first and come back after that
 4. go to line 8, you can see a typo, fix that
 5. after that let's try running nginx, `sudo systemctl start nginx` or `sudo nginx`
     - you will get `nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)` since we have a fake server running
@@ -52,7 +52,7 @@ follow the steps, you are fine!!
     - the reason of that is "probably" because of fire wall issue, 99% of the time. So if AWS has the correct inbound, that means the problem is in linux itself
 7. `cd /etc/iptables/`
 8. `sudo vim rules.v4`
-    - again, if you have `E212: Can't open file for writing` while saving files your vim, go straightly to step 15 and come back
+    - again, if you have `E212: Can't open file for writing` while saving files on your vim, go straightly to step 15 and come back
 9. delete the line `-A INPUT -p tcp -m tcp --dport 80 -j REJECT --reject-with icmp-port-unreachable`
     - ![image05](https://github.com/bscny/git-practice/blob/main/assets/images/week_09/5.png)
 10. after that, exit vim and type `sudo iptables -D INPUT -p tcp --dport 80 -j REJECT`
