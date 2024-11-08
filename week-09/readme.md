@@ -76,3 +76,9 @@ follow the steps, you are fine!!
 17. `cd /var/log/system/`
 18. `sudo rm *`
     - now if we use vim to edit files, no longer has errors like before
+
+## 心得與想法
+
+在上課時我的第一步就是 `sudo fuser -k 80/tcp` ，之後也很快就修好 nginx 的 typo、index.html 的權限，但之後就傻住了。當時的我完全不知道 linux 裡有 Iptable 這種東西，也沒有往這方面想，只是一股腦在找 nginx 有什麼遺漏的環境設定，直到，我的其中一個組員找出解法。
+`curl localhost` 成功之後，便回家開始研究 data storage，然而卻發現組員的改法一旦重新 ssh 登入就失效了，於是重新研究，不斷查資料之後約莫三十分鐘才全部搞定。
+我認為這次，我的思考太過狹隘，擅自認為 AWS inbound 開了防火牆就不會有事，所以資料查詢方向完全錯誤。但事後學到的知識還滿有趣的，比如說 linux 硬碟滿了還能裝 tmux, NerdTree、fuser 指令、df -h 指令，log 檔可能造成的問題等。
