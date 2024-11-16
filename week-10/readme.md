@@ -28,9 +28,9 @@ successful!
     - 但是 CloudWatch Metrics 的圖表還是沒更新
     - ![6](https://github.com/bscny/git-practice/blob/main/assets/images/week_10/6.png)
 5. 又過了一段時間，第二封 email 已經來了，CloudWatch Metrics 卻還是沒更新到超過 60% 的情況
-    - [7](https://github.com/bscny/git-practice/blob/main/assets/images/week_10/7.png)
+    - ![7](https://github.com/bscny/git-practice/blob/main/assets/images/week_10/7.png)
 6. 最後，在過了兩分鐘左右，CloudWatch Metrics 終於成功更新 (順帶一提，這裡是在半夜 1:30 測試，原本以為會很快T_T)
-    - [8](https://github.com/bscny/git-practice/blob/main/assets/images/week_10/8.png)
+    - ![8](https://github.com/bscny/git-practice/blob/main/assets/images/week_10/8.png)
 
 ### 總結
 
