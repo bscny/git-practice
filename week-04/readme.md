@@ -16,7 +16,7 @@ At step 9 and 10. 設定 Nginx，讓他可以 proxy 到這個 Express Server，�
 
 # WEEK 4
 
-1. The IP address is : 54.250.70.171
+1. The IP address is : [18.181.196.235](18.181.196.235)
 
 2. 什麼是 instance type?
 
@@ -174,3 +174,7 @@ At step 9 and 10. 設定 Nginx，讓他可以 proxy 到這個 Express Server，�
 > https://blog.logrocket.com/how-to-run-node-js-server-nginx/
 
 > https://www.geeksforgeeks.org/what-is-security-group-in-aws-and-how-to-create-it/
+
+# 備註
+
+報告老師，由於我的 AWS instance 曾經一直開著三台，所以有被算錢。為了及時止血只好先把所有的 instance 關掉，現在 12 月了，重啟後發現 ip 那些全跑掉了，故來重新設定。若老師看到 commit 時發現為麼這學生這麼晚才交作業，原因是如此。T_T
